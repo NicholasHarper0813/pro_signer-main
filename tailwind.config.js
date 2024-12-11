@@ -1,19 +1,9 @@
 import { fontFamily } from "tailwindcss/defaultTheme"
 
-/** @type {import('tailwindcss').Config} */
 const config = {
-  // darkMode: ["class"],
   content: ["./src/**/*.{html,js,svelte,ts}"],
-  // safelist: ["dark"],
   theme: {
     extend: {
-      // fontSize: {
-      //   xl: "20px",
-      //   "2xl": "22px",
-      //   "3xl": "28px",
-      //   "4xl": "38px",
-      //   "5xl": "48px",
-      // },
       colors: {
         "secondary-dark": "#d21c5c",
         border: "hsl(var(--border) , <alpha-value>)",
@@ -50,11 +40,6 @@ const config = {
           foreground: "hsl(var(--card-foreground) , <alpha-value>)",
         },
       },
-      // borderRadius: {
-      //   lg: "var(--radius)",
-      //   md: "calc(var(--radius) - 2px)",
-      //   sm: "calc(var(--radius) - 4px)",
-      // },
       fontFamily: {
         sans: ["'Mulish Variable'", ...fontFamily.sans],
         geo: ["Geomanist", ...fontFamily.sans],
@@ -67,37 +52,17 @@ const config = {
 
     screens: {
       mv: "360px",
-      // => @media (min-width: 480px) { ... }
-
       xs: "480px",
-      // => @media (min-width: 480px) { ... }
-
       sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
-      ml: "992px", // Medium Large
-      // => @media (min-width: 992px) { ... }
-
+      ml: "992px",
       lg: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
       sl: "1199px",
-      // => @media (min-width: 1024px) { ... }
-
       xl: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
       "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
-
       "3xl": "1921px",
-      // => @media (min-width: 1920px) { ... }
 
       wrap: "1410px",
-      // => @media (min-width: 1410px) { ... }
     },
   },
 }
