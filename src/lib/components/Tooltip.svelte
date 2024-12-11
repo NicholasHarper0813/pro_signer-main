@@ -4,11 +4,13 @@
   export let position = "top"
   let isVisible = false
 
-  function handleMouseOver() {
+  function handleMouseOver() 
+  {
     isVisible = true
   }
 
-  function handleMouseOut() {
+  function handleMouseOut()
+  {
     isVisible = false
   }
 </script>
